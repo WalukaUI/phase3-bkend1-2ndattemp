@@ -1,7 +1,13 @@
 development:
-  adapter: sqlite3
-  database: db/crickusa
+  adapter: postgresql
+  database: crickusa-dev
   pool: 5
   timeout: 5000
   username: username
   password: password
+
+  production:
+  adapter: postgresql
+  database: crickusa_production
+  pool: 5
+  timeout: 5000
